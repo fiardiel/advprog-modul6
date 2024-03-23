@@ -43,5 +43,4 @@ If the user request line is `GET /sleep HTTP/1.1`, then the thread is being put 
 
 
 ## Commit 5 Reflection
-
-
+Managing tasks concurrently in Rust often involves utilizing a thread pool, which comprises pre-allocated worker threads. These pools efficiently handle asynchronous tasks, ranging from parallelizing CPU-bound workloads to executing non-blocking I/O operations, thus alleviating the burden on the main thread.
