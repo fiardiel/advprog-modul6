@@ -19,6 +19,8 @@ The bind, incoming, unwrap, lines, and is_empty functions are part of the Rust s
 
 
 ## Commit 2 Reflection
+![Commit 2 screen capture](/assets/images/commit2.png)
+
 The code snippet processes incoming data from a TCP stream. It reads lines from the stream, collects them into a vector, and then constructs an HTTP response. This response includes a status line, the length of the file content, and the file content itself. Finally, it sends the response back to the client via the stream.
 
 Key steps:
@@ -33,8 +35,8 @@ Take lines as long as they are not empty and collect them into a vector of strin
 
 
 ## Commit 3 Reflection
-
-
+![Commit 3 screen capture](/assets/images/commit3.png)
+The code snippet reads the request from the client, if the request_line is a GET request to the / path, it sends the contents of the hello.html file as a response. If the request is not a GET request to the / path, it sends a 404 Not Found response. The refactoring at the end of the steps is to reduce repeated code
 
 ## Commit 4 Reflection
 
