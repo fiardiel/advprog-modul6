@@ -39,6 +39,7 @@ Take lines as long as they are not empty and collect them into a vector of strin
 The code snippet reads the request from the client, if the request_line is a GET request to the / path, it sends the contents of the hello.html file as a response. If the request is not a GET request to the / path, it sends a 404 Not Found response. The refactoring at the end of the steps is to reduce repeated code
 
 ## Commit 4 Reflection
+If the user request line is `GET /sleep HTTP/1.1`, then the thread is being put to sleep for 10 seconds, that's why it is slow to load it.
 
 
 ## Commit 5 Reflection
