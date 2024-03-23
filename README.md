@@ -16,3 +16,29 @@ The function then reads lines from the buffered reader, unwraps the results, sto
 Finally, the handle_connection function prints the HTTP request to the console.
 
 The bind, incoming, unwrap, lines, and is_empty functions are part of the Rust standard library and are used to implement the functionality described above.
+
+
+## Commit 2 Reflection
+The code snippet processes incoming data from a TCP stream. It reads lines from the stream, collects them into a vector, and then constructs an HTTP response. This response includes a status line, the length of the file content, and the file content itself. Finally, it sends the response back to the client via the stream.
+
+Key steps:
+
+1. Use BufReader to read incoming data line by line.
+Take lines as long as they are not empty and collect them into a vector of strings.
+2. Read the contents of the file "hello.html" into a string.
+3. Calculate the length of the file contents.
+4. Format an HTTP response containing the status line, content length, and file contents.
+5. Send the response back to the client via the TCP stream.
+6. The code may panic if there's an error while reading or sending data, as it uses unwrap() extensively without error handling.
+
+
+## Commit 3 Reflection
+
+
+
+## Commit 4 Reflection
+
+
+## Commit 5 Reflection
+
+
